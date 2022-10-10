@@ -48,3 +48,20 @@ const questions = [
         default: 'npm test',
     }
 ];
+
+//TODO: Function to write README file
+
+function writeToFile(fileName, data) { 
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+  }
+
+//TODO: Function to initialize 
+
+function init() { 
+    inquirer.prompt(questions).then(userResponse => {
+      writeToFile('README.md', generateMarkdown({...userResponse}));
+    });
+   }
+
+   // Function call to initialize 
+   init();
