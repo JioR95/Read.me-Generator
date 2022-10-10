@@ -25,4 +25,26 @@ const questions = [
         name: 'description',
         message: 'Type description of your project!(Required)',
     },
-    
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Type information about usage!(Required)',
+    },
+    {
+        type: 'checkbox',
+        name: 'license',
+        message: 'Select the type of license:',
+        choices: ['GPLv2', 'Apache 2.0', 'MIT', 'No License', 'Skip']
+    },
+    {
+        type: 'input',
+        name: 'contributor',
+        message: ' Can add a contributor if any?',
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Was testing provided for your project?',
+        default: 'npm test',
+    }
+];
