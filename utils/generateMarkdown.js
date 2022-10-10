@@ -45,3 +45,32 @@ function generateMarkdown(data) {
     return `# ${data.title}
     ${renderLicenseBadge(data.license)}
 
+
+## Description
+${data.description}
+
+## Table of Contents (Optional)
+
+- [Installation](#installation)
+
+- [Usage](#usage)
+${renderLicenseLink(data.license)}
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+${renderLicenseSection(data.license)}
+
+## Contibuting
+${data.contributing}
+
+## Tests
+To run test run the following command: 
+${data.test}`;
+
+}
+
+module.exports = generateMarkdown;
+  
