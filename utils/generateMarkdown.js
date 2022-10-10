@@ -40,4 +40,8 @@ function renderLicenseSection(license) {
     [Click Here for More Information](${renderLicenseLink(license)})`;
     }
 
-  
+    // TODO: Create a function to generate markdown for README
+function generateMarkdown(data) {
+    return `# ${data.title}
+    ${renderLicenseBadge(data.license)}
+
