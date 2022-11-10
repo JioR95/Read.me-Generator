@@ -46,14 +46,25 @@ function generateMarkdown(data) {
     ${renderLicenseBadge(data.license)}
 
 
+
+
+
+
+## Email 
+${renderLicenseLink(data.license)}
+${data.usage}
+
+## Github
+${renderLicenseLink(data.license)}
+${data.usage}
+
 ## Description
-${data.description}
+${renderLicenseLink(data.license)}
+${data.usage}
 
 ## Installation
-${data.installation}
-
-- [Usage](#usage)
 ${renderLicenseLink(data.license)}
+${data.usage}
 
 ## Usage
 ${data.usage}
@@ -61,6 +72,7 @@ ${renderLicenseSection(data.license)}
 
 ## Contibuting
 ${data.contributing}
+${data.usage}
 
 ## Tests
 To run test run the following command: 
