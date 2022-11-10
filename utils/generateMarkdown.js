@@ -49,15 +49,11 @@ function generateMarkdown(data) {
 ## Description
 ${data.description}
 
-## Table of Contents (Optional)
-
-- [Installation](#installation)
+## Installation
+${data.installation}
 
 - [Usage](#usage)
 ${renderLicenseLink(data.license)}
-
-## Installation
-${data.installation}
 
 ## Usage
 ${data.usage}
